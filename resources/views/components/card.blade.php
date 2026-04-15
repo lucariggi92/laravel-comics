@@ -1,9 +1,9 @@
-<div class ="card h-100">
+<div class ="h-100 text-light">
 
 {{ $immagine}}
   <div class="card-body">
          <div >
-        <h3 class="card-title">{{$titolo}}</h3>
+        <h3 class="card-title mt-3">{{$titolo}}</h3>
     </div>
   </div>
   

@@ -118,24 +118,34 @@ h1 {
    width: 100%;
  position: relative;
  padding-top: 50px;
- padding-bottom: 50px;
+ padding-bottom: 20px;
 }
 
-/* griglia cards */
-.col{
-  width:calc(100% / 6);
-  padding: 10px;
-
-
+//badge
+.badge-luca {
+  background-color: rgb(22, 158, 221);
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+position: absolute;
+  top:0;
+  left: 10%; 
+  transform: translateY(-50%);
+  z-index: 10;
 }
+
+
 
 .imgSeries{
 width: 100%;
-height: 220px;
+height: 100px;
 object-fit: cover;
 max-width: 50vw;
 max-height: 50vh;
-
+object-position: top;
 }
 
 h3{
@@ -144,6 +154,18 @@ h3{
   font-size: 0.6rem;
 }
 
+
+//button load more
+button{background-color: rgb(22, 158, 221);
+  color: white;
+  padding: 2px 10px;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  border: none;
+
+}
 /* //products */
 .imgProducts{
 width: 50px;
@@ -163,25 +185,4 @@ width: 50px;
   top: -100px;
 }
 
-.text-white{
-  color: white;
-}
-.p-bottom{
-  padding-bottom: 20px;
-}
 
-//badge
-.badge-luca {
-  background-color: rgb(22, 158, 221);
-  color: white;
-  padding: 10px 20px;
-  display: inline-block;
-  font-weight: bold;
-  text-transform: uppercase;
-  
-position: absolute;
-  top:0;
-  left: 10%; 
-  transform: translateY(-50%);
-  z-index: 10;
-}

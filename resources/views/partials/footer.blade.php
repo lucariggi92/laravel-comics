@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Footer</title>
-</head>
-<body>
-    <div>
-        <div class="container">
-            Footer
-        </div>
-    </div>
-   
-</body>
-</html>
+
+
+<footer className="text-white ">
+            <div className="bg-footer p-20"> 
+            <div className="container wrap"> 
+            <img src="../src/assets/img/dc-logo-bg.png" alt="" className="bg-logo" />
+             footer
+        </footer>
