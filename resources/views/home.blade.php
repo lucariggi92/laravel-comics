@@ -1,19 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomePage</title>
-</head>
-<body>
-    @include("partials.header")
-    <br>
-    @php
-    $saluto ="Ciao"
-    @endphp
-    
-    {{$saluto}}
-    <br>
-      @include("partials.footer")
-</body>
-</html>
+@extends("layouts.master")
+
+@section("contenuto")
+<h1>Hero Banner</h1>
+@endsection
+
+@section("prodotti")
+<section>
+
+    @for($i=0; $i<4; $i++)
+<x-card>
+    immagine card
+</x-card>
+    @endfor
+
+
+</section>
+@endsection
+
