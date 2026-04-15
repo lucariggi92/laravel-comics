@@ -6,6 +6,11 @@
     <title>Footer</title>
 </head>
 <body>
-    Footer
+    <div>
+        <div class="container">
+            Footer
+        </div>
+    </div>
+   
 </body>
 </html>
