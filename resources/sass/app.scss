@@ -141,7 +141,7 @@ position: absolute;
 
 .imgSeries{
 width: 100%;
-height: 100px;
+height: 25vh;
 object-fit: cover;
 max-width: 50vw;
 max-height: 50vh;
@@ -166,8 +166,15 @@ button{background-color: rgb(22, 158, 221);
   border: none;
 
 }
+
+//icon menu section
+.bg-blu-icon{
+   background-color: rgb(22, 158, 221); 
+    width: 100%;
+    height: 30vh;
+}
 /* //products */
-.imgProducts{
+.icons{
 width: 50px;
 }
 

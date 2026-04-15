@@ -4,6 +4,10 @@
 $cards = config("comics");
 @endphp
 
+@php 
+$icons = config("iconsmenu")
+@endphp
+
 @section("hero banner")
 <section class="bg-herobanner"></section>
 @endsection
@@ -17,12 +21,15 @@ $cards = config("comics");
     <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-4">
             
             @foreach($cards as $card)
-            <div class="col">     
+            <div class="col">  
+                <a href="/">   
                 <x-card>
                     <x-slot:immagine>
+                        
                         <img src="{{$card["thumb"]}}" alt="{{$card["title"]}}" class="imgSeries"></x-slot>
                     <x-slot:titolo>{{$card["title"]}}</x-slot>
                 </x-card>
+                </a>
             </div>
             @endforeach
     </div>
@@ -35,7 +42,21 @@ $cards = config("comics");
 @endsection
 
 @section("icon menu")
-<section>
-    Inconcine menù su sfono blu
+<section class="bg-blu-icon flex justify-content-center align-center uppercase text-light ">
+    <div>
+            <ul class="flex gap-5 align-center ">          
+                @foreach($icons as $icon)
+                <li>  <a href="/">
+                     <img src="{{$icon["icon"]}}" alt="{{$icon["title"]}}" class="icons">
+                       {{$icon["title"]}}
+                     </a>
+                   
+                </li>
+                @endforeach
+            </ul>
+    </div>
+     
 </section>
 @endsection
+
+
