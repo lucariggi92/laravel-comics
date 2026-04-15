@@ -15,9 +15,9 @@ $icons = config("iconsmenu")
 @section("grid card")
 
 <section class="bg-black">
-    <div class="text-light uppercase badge-luca">current series</div>
+    
 <div class="container">
-
+<div class="text-light uppercase badge-luca">current series</div>
     <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-4">
             
             @foreach($cards as $card)
