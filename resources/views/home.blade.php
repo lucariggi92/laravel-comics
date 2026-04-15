@@ -42,20 +42,18 @@ $icons = config("iconsmenu")
 @endsection
 
 @section("icon menu")
-<section class="bg-blu-icon flex justify-content-center align-center uppercase text-light ">
-    <div>
-            <ul class="flex gap-5 align-center ">          
-                @foreach($icons as $icon)
-                <li>  <a href="/">
-                     <img src="{{$icon["icon"]}}" alt="{{$icon["title"]}}" class="icons">
-                       {{$icon["title"]}}
-                     </a>
-                   
-                </li>
-                @endforeach
-            </ul>
+<section class="bg-blu-icon py-5"> <div class="container">
+        <ul class="flex justify-content-between align-center w-100 p-0 m-0">          
+            @foreach($icons as $icon)
+            <li class="flex align-center"> 
+                <a href="/" class="flex align-center gap-1 text-decoration-none text-light">
+                    <img src="{{ $icon['icon'] }}" alt="{{ $icon['title'] }}" class="icons">
+                    <span class="uppercase">{{ $icon['title'] }}</span>
+                </a>
+            </li>
+            @endforeach
+        </ul>
     </div>
-     
 </section>
 @endsection
 
