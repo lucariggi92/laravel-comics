@@ -27,12 +27,7 @@ ul {
 
 
 
-.container {
 
-  width: 80%;
-  margin: 0 auto;
-  max-width: 1000px;
-}
 
 
 .flex {
@@ -115,7 +110,7 @@ h1 {
 /* grid*/
 .bg-black {
   background-color: rgb(54, 53, 53);
-   width: 100%;
+width: 100%;
  position: relative;
  padding-top: 50px;
  padding-bottom: 20px;
@@ -132,7 +127,7 @@ h1 {
   
 position: absolute;
   top:0;
-  left: 17%; 
+  left: 7%; 
   transform: translateY(-50%);
   z-index: 10;
 }
@@ -141,7 +136,7 @@ position: absolute;
 
 .imgSeries{
 width: 100%;
-height: 25vh;
+height: 10rem;
 object-fit: cover;
 max-width: 50vw;
 max-height: 50vh;
@@ -171,25 +166,58 @@ button{background-color: rgb(22, 158, 221);
 .bg-blu-icon{
    background-color: rgb(22, 158, 221); 
     width: 100%;
-    height: 30vh;
+  
 }
-/* //products */
+/* //icons menù */
 .icons{
 width: 50px;
 }
 
 /* //footer */
 .bg-footer{
-  background-image: url(./assets/img/footer-bg.jpg);
+  background-image: url("../../public/img/footer-bg.jpg");
   background-size: cover;
+
+  position: relative;
+  overflow: hidden;
+ ul {
+        padding-left: 0;  // Toglie il rientro sinistro (il colpevole principale)
+        margin-left: 0;   // Toglie eventuali margini
+    }
+
+    li {
+        color: gray;      // Stile tipico dei link secondari DC
+        font-size: 0.9rem;
+        
+    }
+
+}
+
+.bg-logo {
+    position: absolute;
+    top: 50%;          
+    right: 100px;   
+    transform: translateY(-50%); 
+    
+    width: 550px;      
+    z-index: 1;        
+    
+}
+
+
+.bg-footer-luca{
+
+   background-color: black; 
+    width: 100%;
+    height: 50px;
  
-
 }
 
-.bg-logo{
-  position:absolute;
-  right: 100px;
-  top: -100px;
+.footer-img{
+height:25px;
+  padding: 0 4px;
 }
 
-
+.text-footer-luca{
+  color: rgb(22, 158, 221); 
+}
